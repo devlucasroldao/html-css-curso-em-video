@@ -15,5 +15,19 @@
         <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
         <img src="imagens/grande.png" alt="Imagem flexível">
     </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir âudios em HTML5</p>
+    <!-- Pode ser dessa forma: -->
+    <!-- <audio src="midia/audio-fortnite-exemplo.mp3" controls autoplay></audio> -->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/audio-fortnite-exemplo.mp3" type="audio/mpeg">
+        <source src="midia/audio-fortnite-exemplo.ogg" type="audio/ogg">
+        <source src="midia/audio-fortnite-exemplo.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio.</p>
+        <p><a href="midia/audio-fortnite-exemplo.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
 </body>
 </html>
