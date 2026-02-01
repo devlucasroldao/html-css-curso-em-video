@@ -1,31 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vídeos com HTML5</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Inserindo vídeos hospedados localmente</h1>
     <p>Este vídeo está hospedado no meu próprio servidor</p>
 
     <!-- <video src="videos/meu-video.mp4" width="500" controls></video> -->
-
-    <video controls width="500" poster="imagens/capa pardal.png">
-
-        <!-- ordem tem prioridade! -->
-
-        <source src="videos/meu-video.mp4" type="video/mp4">
-        <source src="videos/meu-video-fast.mp4" type="video-fast/mp4">
-        <source src="videos/meu-video-webm.webm" type="video/webm">
-        <source src="videos/meu-video.ogv" type="video/ogv">
-        
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
-
+    <!-- ordem tem prioridade! -->
+    <video width="560" poster="imagens/capa pardal.png" controls autoplay loop>
+      <source src="videos/meu-video.mp4" type="video/mp4" />
+      <source src="videos/meu-video-fast.mp4" type="video-fast/mp4" />
+      <source src="videos/meu-video-webm.webm" type="video/webm" />
+      <source src="videos/meu-video.ogv" type="video/ogv" />
+      <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
     </video>
 
+    <h1>Inserindo vídeos do Youtube</h1>
+    <p>
+      Aperte em compartilhar no vídeo escolhido, e aperte em imcorporar e copie
+      aqui!
+    </p>
 
-
-
-</body>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/TL2P8DB6p0w?si=D7TvpdhOzTmx7-jI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- assim você economiza dados, além de ter um alcance maior com o youtube! -->
+  </body>
 </html>
