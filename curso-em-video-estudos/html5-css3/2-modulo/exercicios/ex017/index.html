@@ -6,16 +6,55 @@
     <title>Fontes em CSS</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+            /* Medidas Absolutas
+            cm, mm, in, px, pt, pc 
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            
+            font-size: 0.5in;
+            font-size: 1cm;
+
+            16 px geralmente = 1em 
+            font-size: 16px; 
+            melhor para usar é em ou px, são as medidas oficiais!
+
+            font-size: 1em;
+            font-weight: lighter;
+            lighter, normal, bold, bolder
+            existe esses três tipos! 
+            
+            ou na versão númerica: 100 - 900
+
+            font-style: italic;
+            text-decoration: underline; */
         }
 
-        h1, h2{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        h1 {
+            /* font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            shorthand - usando o font!
+            Muito útil! 
+            
+            Ordem sempre usada:
+            font-style -> font-weight -> font-size -> font-family*/
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
         }
+
+        h2{
+            font: italic bold 2em 'Work Sans';
+        }
+        
     </style>
 </head>
 <body>
-    <h1>Fontes em CSS</h1>
+    <h1>Trabalhando com fontes em CSS</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis vel exercitationem nobis, sed voluptas reprehenderit ut itaque autem quas at inventore ad repellat optio dolores quis consectetur, ab et natus mollitia. Incidunt iusto fugiat soluta velit quam amet eaque nulla nihil possimus beatae provident harum, nesciunt dolores quas perferendis nisi.</p>
     <h2>Subtítilo do exercício</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum debitis rem id aut beatae velit laborum aliquam autem, dolore quibusdam sint eveniet perspiciatis accusantium itaque cupiditate vero sapiente totam hic! Accusamus, officia reprehenderit? Quod eos dolore aperiam, consectetur in quidem obcaecati, aliquam aliquid ipsa natus nobis adipisci. Ducimus, accusantium rerum?</p>
