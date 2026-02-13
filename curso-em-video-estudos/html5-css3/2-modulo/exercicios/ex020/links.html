@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{ /* quando visita o site fica preto */
+            color: rgb(10, 2, 2);
+        }
+
+        a:hover{ /* quando passa o mouse em cima fica azul */
+            text-decoration: underline;
+            color: blue;
+        }
+
+        a:active{  /* quando clica em cima fica amarelo */
+            color: yellow;
+        }
+
+        /* Pseudo-Elementos */
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li><a href="https://github.com/devlucasroldao" target="_blank">GitHub</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/devlucasroldao/">LinkedIn</a>
+      </li>
+      <li><a href="https://www.instagram.com/lucaskinhooo/">Instagram</a></li>
+    </ul>
+  </body>
+</html>
